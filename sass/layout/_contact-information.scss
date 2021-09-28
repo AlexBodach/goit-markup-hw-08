@@ -1,0 +1,30 @@
+.contact-information__list {
+  display: block;
+  margin-top: 20px;
+}
+
+.contact-information__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-information__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+.contact-information__link--white {
+  color: var(--white-color);
+}

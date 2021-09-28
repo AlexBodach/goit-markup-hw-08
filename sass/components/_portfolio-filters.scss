@@ -1,0 +1,57 @@
+.portfolio__hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Roboto, sans-serif;
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  list-style: none;
+  color: var(--secondary-text-color);
+}
+
+.filter__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.filter__button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  line-height: 26px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #f5f4fa;
+  text-align: center;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  box-shadow: inset;
+  color: #212121;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

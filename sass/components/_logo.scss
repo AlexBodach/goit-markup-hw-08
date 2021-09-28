@@ -1,0 +1,22 @@
+.logo {
+  /*margin-right: 93px;*/
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+  & > span {
+    color: var(--accent-text-color);
+  }
+  &:visited {
+    color: var(--secondary-text-color);
+  }
+}
+
+.logo--white {
+  color: var(--white-color);
+  &:visited {
+    color: var(--white-color);
+  }
+}

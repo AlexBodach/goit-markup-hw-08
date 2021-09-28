@@ -1,0 +1,40 @@
+.button {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: Roboto;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/*---------Кнопка в FOOTER--------------------*/
+
+.post__button {
+  padding-left: 29px;
+  padding-right: 62px;
+  position: relative;
+}
+
+.post__icon {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*---------Кнопка d форме--------------------*/
+.button-modal {
+  padding-right: 56px;
+  padding-left: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
