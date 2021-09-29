@@ -1,27 +1,34 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
 }
 
 .clients__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+  /* justify-content: space-between; */
+}
+
+.clients__item {
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
 }
 
 .clients__box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;

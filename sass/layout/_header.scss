@@ -1,6 +1,6 @@
 .header {
-  padding-bottom: 24px;
-  padding-top: 25px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -12,7 +12,27 @@
   }
 }
 
-.navigation {
+.header__box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+}
+
+.header__button {
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  &:hover .header__icon,
+  &:focus .header__icon {
+    fill: #2196f3;
+  }
+}
+
+.header__icon {
+  fill: #000000;
 }
