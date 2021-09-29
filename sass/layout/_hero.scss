@@ -6,18 +6,36 @@
 .hero__box {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
-  height: 600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   justify-content: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-logo.jpg);
+    url(../../images/Header-img.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    height: 600px;
+
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .hero__slogan {
@@ -26,10 +44,20 @@
   margin-bottom: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
-  width: 696px;
+
+  /* width: 696px; */
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 22px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    width: 696px;
+  }
 }

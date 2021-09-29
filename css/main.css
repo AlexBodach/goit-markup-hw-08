@@ -30,10 +30,28 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 body {
@@ -255,14 +273,40 @@ body {
 .hero__box {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
-  height: 600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   justify-content: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-logo.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-img.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__box {
+    max-width: 480px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__box {
+    max-width: 768px;
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    max-width: 1200px;
+    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .hero__slogan {
@@ -271,12 +315,27 @@ body {
   margin-bottom: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
-  width: 696px;
+  /* width: 696px; */
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 22px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__slogan {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__slogan {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    width: 696px;
+  }
 }
 
 .button {
@@ -321,47 +380,64 @@ body {
 }
 
 .peculiarities {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.peculiarities__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .peculiarities {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .peculiarities__list {
+    display: flex;
+    flex-wrap: wrap;
+    /*  justify-content: space-between; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .peculiarities__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .peculiarities__item {
-  margin-right: 30px;
-  width: 270px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .peculiarities__item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .peculiarities__box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 
 .peculiarities__title {
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 30px;
   color: var(--secondary-text-color);
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
 }
 
 .service {
   padding-bottom: 94px;
+  display: none;
 }
 
 .service__name {
@@ -466,13 +542,13 @@ body {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
 }
 
 .team__name {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -481,13 +557,14 @@ body {
 }
 
 .team__list {
-  display: flex;
-  justify-content: space-between;
+  /*   display: flex;
+  justify-content: space-between; */
   text-align: center;
 }
 
 .team__item {
   padding-bottom: 30px;
+  margin-bottom: 30px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
