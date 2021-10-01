@@ -36,6 +36,7 @@
   line-height: 117%;
   letter-spacing: 0.01em;
   color: #757575;
+
 }
 
 .form__input {
@@ -105,6 +106,10 @@
   height: 15px;
   background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
+  @media screen and (min-width: 1200px) {
+    left: 10px;
+    top: 2px;  
+  } 
 }
 
 .license-icon {
@@ -122,6 +127,10 @@
   line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);    
+  } 
 }
 
 .inform-chek__link {
@@ -133,6 +142,10 @@
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);  
+  } 
 }
 
 .button__box {
