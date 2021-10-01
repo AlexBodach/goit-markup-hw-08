@@ -15,7 +15,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero/Header-mob-1x.jpg);
+    url(./images/hero/Header-mob-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../../images/hero/Header-mob-2x.jpg");
+    background-image: url("./images/hero/Header-mob-2x.jpg");
   }
   @media screen and (min-width: 480px) {
     max-width: 480px;
