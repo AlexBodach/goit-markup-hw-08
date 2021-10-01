@@ -1,11 +1,14 @@
 .socials__list {
   display: flex;
-  text-decoration: none;
+
   align-items: center;
   justify-content: center;
   list-style: none;
 }
 
+.adress-socials {
+  display: flex;
+}
 .socials__item {
   width: 44px;
   height: 44px;

@@ -1,6 +1,10 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   margin-bottom: 30px;
@@ -9,6 +13,10 @@
   font-size: 28px;
   line-height: calc(33 / 28);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .clients__list {
@@ -16,12 +24,30 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  /* justify-content: space-between; */
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .clients__item {
   margin: 15px;
   width: calc((100% - 4 * 15px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .clients__box {
@@ -36,6 +62,9 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients__icons {
@@ -48,9 +77,11 @@
 }
 
 .clients__link:hover .clients__box,
-.clients__link:focus .clients__box,
+.clients__link:focus .clients__box {
+  border-color: var(--accent-text-color);
+}
+
 .clients__link:hover .clients__icons,
 .clients__link:focus .clients__icons {
   fill: var(--accent-text-color);
-  border-color: var(--accent-text-color);
 }

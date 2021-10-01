@@ -1,11 +1,22 @@
 .portfolio__hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.filter {
+  width: 100%;
 }
 
 .filter__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 50px;
   align-items: flex-end;
   font-family: Roboto, sans-serif;
   text-decoration-line: none;
@@ -15,10 +26,14 @@
   letter-spacing: 0.03em;
   list-style: none;
   color: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
   &:last-child {
     margin-right: 0px;
   }

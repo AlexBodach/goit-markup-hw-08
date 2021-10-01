@@ -1,38 +1,77 @@
-.header {
-  padding-bottom: 16px;
+.header .container {
   padding-top: 16px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
-  & .container {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.header__box {
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.navigation {
-}
-
-.header__button {
-  width: 40px;
-  text-align: center;
-  justify-content: center;
-  background-color: #fff;
-  border: none;
-  &:hover .header__icon,
-  &:focus .header__icon {
-    fill: #2196f3;
+  border-bottom: 1px solid #ECECEC;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    max-height: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    max-height: 80px;
+    justify-content: unset;
   }
 }
 
-.header__icon {
-  fill: #000000;
+.menu__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+}
+
+.menu__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.menu__link {
+  text-decoration-line: none;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: var(--accent-text-color);
+}
+
+.block-active {
+  position: relative;
+}
+
+.menu__link--active {
+  color: var(--accent-text-color);
+}
+
+.menu__link--active::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-text-color);
+  border-radius: 2px;
+  @media screen and (min-width: 764px) {
+    bottom: -29px;
+  }
 }

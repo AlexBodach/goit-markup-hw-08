@@ -5,9 +5,20 @@
 }
 
 .container__footer {
-  /* display: flex; */
   align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: unset;
+  }
 }
+
 .adress-socials {
   justify-content: center;
 }
@@ -15,12 +26,23 @@
 .footer__box {
   text-align: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    width: 37%;
+  }
 }
 
 .follow {
   margin-top: 60px;
   text-align: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .follow__title,
@@ -35,12 +57,19 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .post {
   margin-top: 60px;
   text-align: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .post__email {
@@ -62,6 +91,14 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 
   &:focus,
   &:hover,

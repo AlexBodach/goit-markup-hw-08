@@ -15,26 +15,53 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/Header-img.jpg);
+    url(../../images/hero/Header-mob-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../images/hero/Header-mob-2x.jpg");
+  }
   @media screen and (min-width: 480px) {
     max-width: 480px;
-    padding-left: 60px;
-    padding-right: 60px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-left: 204px;
-    padding-right: 204px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/Header-tab-1x.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../images/hero/header-tab-2x.jpg");
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
-
     padding-bottom: 200px;
     padding-top: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/Header-desk-1x.jpg);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/Header-mob-2x.jpg);
   }
 }
 
@@ -42,17 +69,20 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-
-  /* width: 696px; */
+  width: 280px;
   font-weight: 900;
-  font-size: 22px;
-  line-height: calc(42 / 26);
+  font-size: 20px;
+  line-height: 162%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   @media screen and (min-width: 480px) {
     font-size: 26px;
+    width: 360px;
+    line-height: calc(42 / 26);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    width: 360px;
     line-height: calc(42 / 26);
   }
   @media screen and (min-width: 1200px) {

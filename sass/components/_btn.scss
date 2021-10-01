@@ -38,3 +38,22 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/*---------Кнопка BURGER в хедере--------------------*/
+.header .menu-toggle {
+  width: 40px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  &:hover .header__icon,
+  &:focus .header__icon {
+    fill: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header__icon {
+  fill: #000000;
+}

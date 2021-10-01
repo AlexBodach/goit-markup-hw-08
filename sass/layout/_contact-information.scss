@@ -3,11 +3,14 @@
   margin-top: 20px;
 }
 
-.contact-information__item {
-  margin-bottom: 9px;
+.contact-list__item {
+  margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
   }
+}
+.contact-information__item {
+  padding-bottom: 5px;
 }
 
 .contact-information__link {
