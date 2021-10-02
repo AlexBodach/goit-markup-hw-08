@@ -4,8 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ECECEC;
-  @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
     padding-top: 21px;
     padding-bottom: 21px;
     max-height: 80px;
@@ -14,7 +13,7 @@
     padding-top: 24px;
     padding-bottom: 25px;
     max-height: 80px;
-    justify-content: unset;
+   justify-content: unset; 
   }
 }
 
@@ -74,4 +73,10 @@
   @media screen and (min-width: 764px) {
     bottom: -29px;
   }
+}
+
+.border {
+  height: 1px;
+  width: 100vw;
+  background-color: #ECECEC;
 }

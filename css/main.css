@@ -187,6 +187,19 @@ body {
   fill: var(--accent-text-color);
 }
 
+.mob-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mob-contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.mob-contacts {
+  position: absolute;
+  bottom: 0;
+}
+
 .mob-menu__item {
   margin-bottom: 32px;
 }
@@ -210,27 +223,25 @@ body {
   color: var(--accent-text-color);
 }
 
-.mob-menu__item--tel {
-  margin-top: 302px;
-}
-
-.mob-menu__link--tel {
+.mob-contacts__link--tel {
+  text-decoration: none;
   font-size: 30px;
   line-height: calc(40 / 34);
   color: var(--accent-text-color);
 }
 
-.mob-menu__link--tel:focus {
+.mob-contacts__link--tel:focus {
   outline: 2px solid black;
 }
 
 @media screen and (min-width: 480px) {
-  .mob-menu__link--tel {
+  .mob-contacts__link--tel {
     font-size: 34px;
   }
 }
 
-.mob-menu__link--email {
+.mob-contacts__link--email {
+  text-decoration: none;
   padding: 0;
   font-size: 24px;
   line-height: calc(28 / 24);
@@ -239,6 +250,7 @@ body {
 
 .socials-text__list {
   margin-top: 64px;
+  margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -270,7 +282,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (min-width: 768px) {
@@ -357,6 +368,12 @@ body {
   .menu__link--active::after {
     bottom: -29px;
   }
+}
+
+.border {
+  height: 1px;
+  width: 100vw;
+  background-color: #ECECEC;
 }
 
 .logo {
@@ -698,7 +715,7 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .peculiarities__title {
     text-align: left;
   }
@@ -880,6 +897,10 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .team__item {
     margin: 15px;
@@ -941,6 +962,7 @@ body {
   .clients__title {
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
   }
 }
 
@@ -1114,6 +1136,7 @@ body {
   .post {
     text-align: left;
     width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -1383,7 +1406,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   align-items: flex-end;
   font-family: Roboto, sans-serif;
   text-decoration-line: none;
@@ -1398,6 +1421,7 @@ body {
 @media screen and (min-width: 768px) {
   .filter__list {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
